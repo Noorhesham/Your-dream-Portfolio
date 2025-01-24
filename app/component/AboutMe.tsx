@@ -10,11 +10,11 @@ import { EMAIL } from "../constants";
 const AboutMe = ({
   img = "/channels4_profile (3).jpg",
   text,
-  height = "h-96",
+  height = "h-96",name="Your Name"
 }: {
   img?: string;
   text?: string;
-  height?: string;
+  height?: string; name:string
 }) => {
   return (
     <MaxWidthWrapper id="about" className=" relative">
@@ -33,7 +33,7 @@ const AboutMe = ({
           </Button>
         </div>
       </div>
-      <h4 className=" text-7xl  opacity-60 font-bold  lg:block hidden text-main2 absolute right-10 bottom-0">YOUR NAME</h4>
+      <h4 className=" text-7xl  opacity-60 font-bold  lg:block hidden text-main2 absolute right-10 bottom-0">{name}</h4>
     </MaxWidthWrapper>
   );
 };

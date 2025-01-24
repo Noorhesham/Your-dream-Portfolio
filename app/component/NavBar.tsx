@@ -31,12 +31,13 @@ const NavBar = () => {
                 </li>
               ))}
             </ul>
-            <a href="/noorhesham.pdf" download="Noor-Hesham-cv">
+            <a href="/mohamed.pdf" download="Noor-Hesham-cv">
               <Button className=" text-sm">Download CV</Button>
             </a>
             <div className="  lg:hidden block">
               <PhoneNav />
             </div>
+            {/*light and dark mode */}
             <ModeToggle />
           </div>
         </MaxWidthWrapper>

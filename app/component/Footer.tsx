@@ -14,7 +14,7 @@ import Image from "next/image";
 import GridContainer from "./GridContainer";
 import { TypographyH1, TypographyList } from "./Typography";
 import { FaMailBulk, FaPhone } from "react-icons/fa";
-import { EMAIL, PHONE } from "../constants";
+import { EMAIL, PHONE, ServiceId, Template } from "../constants";
 import ListArray from "./ListArray";
 
 const messageSchema = z.object({
@@ -38,7 +38,7 @@ export default function ContactForm() {
     setSuccess(false);
     setError(false);
 
-    emailjs.send("service_kxdhvdb", "template_3i15jgb", data, "t8wKaNDqOW71fnrMx").then(
+    emailjs.send(ServiceId, Template, data).then(
       (result) => {
         setSuccess(true);
         console.log("Email sent:", result.text);
@@ -134,12 +134,12 @@ export default function ContactForm() {
               </a>
             </div>
           </div>
-          <ListArray heading="Services" items={["Main", "Projects", "Portfolio", "About us", "Contact us", "News"]} />
+          <ListArray heading="ABOUT ME" items={["Main", "Projects", "Portfolio", "About us", "Contact us", "News"]} />
 
           <ListArray heading="Services" items={["Main", "Projects", "Portfolio", "About us", "Contact us", "News"]} />
 
           <div className="">
-            <p>©2023 All rights reserved. Noor</p>
+            <p>©2025 All rights reserved. Noor</p>
             <p>Developed by the Me</p>
           </div>
         </MaxWidthWrapper>

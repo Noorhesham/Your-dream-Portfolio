@@ -74,8 +74,8 @@ const HorizontalScroll = ({ items, paragraph }: { items: any[]; paragraph?: stri
             key={index}
             className="flex  lg:flex-row flex-col !pl-0 panel w-screen text-white "
           >
-            <Link
-              href={item.href || "#"}
+            <div
+              
               className="flex innersection flex-col -translate-y-14 opacity-0 gap-6 w-full lg:w-1/2"
             >
               <p className="stroke-text text-[100px] lg:text-[140px] leading-none font-extrabold">
@@ -88,7 +88,7 @@ const HorizontalScroll = ({ items, paragraph }: { items: any[]; paragraph?: stri
               <TypographyP className=" text-sm lg:text-lg text-black dark:text-gray-300">
                 {item.description || "add any description you want here boi !"}
               </TypographyP>
-            </Link>
+            </div>
 
             {/* Right Image */}
             <div className="relative h-[80vh] w-full lg:w-1/2">

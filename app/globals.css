@@ -7,7 +7,7 @@ html {
 }
 @layer utilities {
   .font-stroke-text {
-    -webkit-text-stroke: 2px #ff3d00; /* Stroke color and width */
+    -webkit-text-stroke: 2px #f64fe2; /* Stroke color and width */
     color: transparent; /* Transparent fill */
   }
 }
@@ -76,11 +76,12 @@ html {
   }
 }
 .stroke-text {
-  -webkit-text-stroke: 2px #ff6000; /* Add this if you skip the plugin */
+  -webkit-text-stroke: 2px #f64fe2; /* Add this if you skip the plugin */
   color: transparent;
 }
+
 /* orange */
-@layer base {
+/* @layer base {
   :root {
     --background: 0 0% 100%;
     --foreground: 20 14.3% 4.1%;
@@ -135,10 +136,10 @@ html {
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
   }
-}
+}  */
 
 /* purple */
-/* @layer base {
+@layer base {
   :root {
     --background: 0 0% 100%;
     --foreground: 224 71.4% 4.1%;
@@ -193,7 +194,7 @@ html {
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
   }
-} */
+}
 
 /*yellow/
 @layer base {

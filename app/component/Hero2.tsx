@@ -29,7 +29,7 @@ const Hero2 = ({
       id="#"
       className={` relative w-full h-full flex flex-col md:flex-row ${
         mediaPosition === "left" ? "md:flex-row-reverse" : ""
-      } flex  items-center  w-full  h-screen relative`}
+      } flex  items-center  w-full gap-3  h-screen relative`}
     >
       <div className={`${height} rounded-2xl overflow-hidden relative h-full w-full`}>
         <Image src={img} alt="" fill className=" object-cover" />

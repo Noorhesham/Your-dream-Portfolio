@@ -1,5 +1,10 @@
 export const EMAIL = "noordragon2004@gmail.com";
 export const PHONE = "+20 114 583 81 87";
+export const ServiceId = "service_kxdhvdb";
+export const Template = "template_3i15jgb";
+export const LOGOPATH="/Hollow-Knight-Background-PNG-Image.png"
+export const LOGOTEXT="NOOR"
+// الشركات مثلا او التيكنولوجيز
 export const TECH = [
   "/ts.svg",
   "/node.png",
@@ -14,8 +19,11 @@ export const TECH = [
   "/js.png",
 ];
 export const MAINCOLOR = "#ff3d00";
+
+// الخدماااااااااااات
 export const SERVICES = [
   {
+    title: "this is my first service",
     img: "/services-1.png.webp",
     description:
       "We create 3D models, concepts and assets for games (PC, console, mobile), game development, computer graphics for film, animation, VFX, and VR/AR apps.",
@@ -23,9 +31,18 @@ export const SERVICES = [
   { img: "/services-3.png.webp" },
   { img: "/services-3.png.webp" },
   { img: "/services-3.png.webp" },
+  { img: "/services-3.png.webp", title: "", description: "" },
 ];
-//object props
-/* id title des img 1 or array iconlist  link to projcet or video and git hub all optional except title img */
+
+// المشاااااااااااااااااااريع
+/*
+ياصورة يا صور كتير
+img:"/اسم الصورة"
+
+imgs:["/اسم الصورة",/اسم الصورة"]
+
+*/
+
 export interface Project {
   id: number;
   title: string;
@@ -167,7 +184,7 @@ export const projects = [
     ],
     link: "https://gaming-boi-tutorial2.vercel.app/",
     git: "https://github.com/Noorhesham/gaming-boi-tutorial2",
-    img: ["/gamingboi1.png", "/gamingboi2.png", "/gamingboi3"],
+    img: ["/gamingboi1.png", "/gamingboi2.png", "/gamingboi3"], //["/ ",']
     video: "https://www.youtube.com/embed/tLDDYY49exI?si=5DI7rk5O95wr1hST",
   },
 ];
@@ -194,3 +211,33 @@ export const animationProjcets = [
     img: ["/palestine1.png", "/palestine2.png", "/palestine3.png"],
   },
 ];
+export const animationProjcets2 = [
+  {
+    id: 157,
+    title: "Palestine Website | Interactive Experience for a Cause",
+    description:
+      "As part of my contribution to the Palestinian cause, I developed the Palestine website, which was designed both as an interactive tutorial and a support platform. The project aimed to raise awareness of the ongoing crisis in Palestine by delivering an engaging and immersive web experience. Using GSAP animations and Locomotive Scroll, I created smooth and captivating animations, making the website more engaging. The project was not only a technical challenge but also a means of offering aid through global recognition. The website garnered attention from the international community, helping to spread awareness and increase support for Palestine during their ongoing crisis. My role was to bring the idea to life, using advanced web technologies to enhance user interaction and provide a platform for support. This project showcased my skills and commitment to using technology for meaningful causes, as it led to positive recognition and increased visibility for Palestine’s crisis.",
+    features: [
+      "Interactive web experience to raise awareness about Palestine's crisis.",
+      "Tutorial-based platform that educates users about the ongoing situation.",
+      "GSAP animations and smooth transitions to engage users visually.",
+      "Locomotive Scroll integration for an immersive, smooth scrolling experience.",
+      "Responsive design to ensure accessibility across devices.",
+      "Impactful storytelling with rich media, focusing on the Palestinian cause.",
+      "Multi-language support to reach a global audience and increase awareness.",
+      "Recognition from international organizations and support networks.",
+    ],
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/next.webp", "/logo.gif"],
+    link: "https://palestine-help.vercel.app/en ",
+    video: "https://www.youtube.com/embed/rjCm_XDTPjQ?si=INIuXOyLzJBtTY0-",
+    git: "https://github.com/Noorhesham/palestine-help",
+    img: ["/palestine1.png", "/palestine2.png", "/palestine3.png"],
+  },
+];
+export default {
+  projects,
+  projects2,
+  SERVICES,
+  TECH,
+  animationProjcets2,
+};
