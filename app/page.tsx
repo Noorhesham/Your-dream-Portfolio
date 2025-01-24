@@ -25,6 +25,7 @@ export default function Home() {
       title , subtitle buttonText  ال 3 تحت بعض 
       mediaSrc مكان الفيديو 
       video :
+      انسخ الكود ده 
             <HeroSection
         videoFallbackSrc="/hell-foto.png.webp"
         title="Hey my name is noor"
@@ -33,7 +34,10 @@ export default function Home() {
         mediaSrc="/hell.mp4"
         mediaType="video"
       />
+      نهاية سكشن الفيديو
+
       fullImage:
+           لصورة كاملة بدل الفيديو انسخ الكود ده 
            <HeroSection
         title="Hey my name is noor"
         subtitle="i am backend developer"
@@ -41,7 +45,11 @@ export default function Home() {
         mediaSrc="/palestine1.png"
         mediaType="image"
       />
+            نهاية سكشن الصورة
+
       imagePart:
+                 لصورة واخده جزء بس  بدل الفيديو انسخ الكود ده 
+
      <HeroSection
         title="Hey my name is noor"
         subtitle="i am backend developer"
@@ -51,6 +59,8 @@ export default function Home() {
         full={false}
         mediaPosition="left"
       />
+                  نهاية سكشن الصورة التاني
+
       */}
       <HeroSection
         videoFallbackSrc="/hell-foto.png.webp"
