@@ -2,7 +2,7 @@ export const EMAIL = "noordragon2004@gmail.com";
 export const PHONE = "+20 114 583 81 87";
 export const ServiceId = "service_kxdhvdb";
 export const Template = "template_3i15jgb";
-export const PUBLI_KEY = "t8wKaNDqOW71fnrMx";
+export const PUBLI_KEY = ""; //ضيف ال key  account settings in email js webiste !
 export const LOGOPATH = "/Hollow-Knight-Background-PNG-Image.png";
 export const LOGOTEXT = "NOOR";
 // الشركات مثلا او التيكنولوجيز
