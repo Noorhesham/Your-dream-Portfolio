@@ -11,10 +11,9 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import emailjs from "@emailjs/browser";
 import { Form } from "@/components/ui/form";
 import Image from "next/image";
-import GridContainer from "./GridContainer";
 import { TypographyH1, TypographyList } from "./Typography";
 import { FaMailBulk, FaPhone } from "react-icons/fa";
-import { EMAIL, PHONE, ServiceId, Template } from "../constants";
+import { EMAIL, PHONE, PUBLI_KEY, ServiceId, Template } from "../constants";
 import ListArray from "./ListArray";
 
 const messageSchema = z.object({
@@ -38,12 +37,12 @@ export default function ContactForm() {
     setSuccess(false);
     setError(false);
 
-    emailjs.send(ServiceId, Template, data).then(
+    emailjs.send(ServiceId, Template, data, PUBLI_KEY).then(
       (result) => {
         setSuccess(true);
         console.log("Email sent:", result.text);
         setPending(false);
-        form.reset(); // Reset the form after successful submission
+        form.reset();
       },
       (err) => {
         console.error("Failed to send email:", err.text);
