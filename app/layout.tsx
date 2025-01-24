@@ -11,22 +11,20 @@ import Footer from "./component/Footer";
 import { ThemeProvider } from "./context/ThemeProvider";
 
 export const metadata: Metadata = {
-  title: "Noor Hesham Portfolio",
+  title: "add title",
   icons: { icon: "/boi.png" },
   openGraph: {
     type: "website",
-    title: "Noor Hesham Portfolio",
-    description: "MERN Stack Developer specializing in React, Next.js, TypeScript, Node.js, MongoDB, and Tailwind CSS.",
+    title: "add title",
+    description: "add description.",
     images: [
       {
         url: "/noor.jpg",
-        alt: "Noor Hesham Portfolio",
+        alt: "add title",
       },
     ],
-    url: "https://new-portfolio-noor-hesham.vercel.app",
+    // url: "https://new-portfolio-noor-hesham.vercel.app",
   },
-  description:
-    "MERN Stack Developer specializing in React, Next.js, TypeScript,Node .js,Mongo DB and Tailwind CSS. Proven track record of crafting high-performance web applications with sleek, user-friendly interfaces. Adaptable and detail-oriented, committed to delivering top-notch solutions. Passionate about staying ahead in technology and contributing to dynamic teams.",
 };
 
 export default function RootLayout({
