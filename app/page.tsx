@@ -99,6 +99,12 @@ export default function Home() {
       جواه حاجتين
       category  المشاريع دي 
       items المشاريع نفسها
+      slidesPerView: في كم سلايد ظاهره في المره الاحده 
+      height طول الصورة
+      autoplay هل يشتغل بشكل تلقائي ولالا
+      loop عاوزه يفضل يلوب لما يخلص ويتعاد من الاول ولالا 
+      بو اه سيبه لو مشعاوز اعمل 
+      loop={false} او autoplay={false}
       */}
       <OverlappingSlider
         slidesPerView={2}
