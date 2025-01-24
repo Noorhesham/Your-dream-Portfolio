@@ -118,14 +118,14 @@ export default function ContactForm() {
             <img src="/logo.png" alt="Studio 801" className="mb-4" />
             <div className="   flex flex-col ">
               <a
-                href="mailto:noordragon2004@gmail.com"
+                href={`mailto:${EMAIL}`}
                 className="flex hover:text-main  duration-150 items-center gap-2 text-white hover:underline"
               >
                 <FaMailBulk className=" w-4 h-4" />
                 {EMAIL}
               </a>
               <a
-                href="tel:+201145838187"
+                href={`tel:${PHONE}`}
                 className="flex  hover:text-main  duration-150  items-center gap-2 text-white hover:underline"
               >
                 <FaPhone className=" w-4 h-4" />
